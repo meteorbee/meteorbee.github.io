@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-Light.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url("../Fonts/JetBrainsMono-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  --BaseDark: #343434;
+
+  --Primary: #9BA2FF;
+  --Secondary: #2F3061;
+
+  --Secondary-Darkened: #151629;
+
+  --Highlight: #CAA8F5;
+  --Accent: #D01332;
+}
+
+body {
+  font-family: JetbrainsMono;
+  font-weight: bold;
+
+  background-color: var(--Secondary);
+  color: var(--Primary);
+}
+
+.sidebar {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--Secondary-Darkened);
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  font-size: 90%;
+  color: var(--Highlight);
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 90%;
+  color: var(--Highlight);
+  display: block;
+}
+
+a i {
+  margin-right: 3px;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 0px 10px;
+  transition: 0.5s;
+}
+
+.PrimaryButton {
+  font-family: JetbrainsMono;
+  font-weight: bold;
+  
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--Secondary-Darkened);
+
+  background-color: var(--Secondary-Darkened);
+  color: var(--Highlight);
+}
+
+.SecondaryButton {
+  font-family: JetbrainsMono;
+  font-weight: bold;
+
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--Secondary-Darkened);
+
+  background-color: #ffffff00;
+  color: var(--Highlight);
+}
+
+.Tag {
+  font-family: JetbrainsMono;
+  font-weight: bold;
+
+  border-radius: 64px;
+  border-style: solid;
+  border-color: var(--Accent);
+
+  padding: 5px;
+
+  background-color: #ffffff00;
+  color: var(--Highlight);
+}
+
+.CloseButton {
+  position: absolute;
+  bottom: 30px;
+  left: 6px;
+
+  font-family: JetbrainsMono;
+  font-weight: bold;
+  
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--Secondary-Darkened);
+
+  background-color: var(--Secondary-Darkened);
+  color: var(--Highlight);
+}
+
+hr {
+  border-color: var(--Primary);
+  border-width: 2px;
+  border-style: solid;
+}
